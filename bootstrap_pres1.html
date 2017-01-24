@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body style="background-color: #d7bfff;">
+
+		<!-- forms -->
+		<h2 style="text-align: center;">FORMS!</h2>
+		<h6 style="text-align: center;">Information inputs, buttons, and check/select boxes</h6><br><br><br>
+		<p style="text-align: center;"><strong>Forms are a way for the user to input data on a web page. In order for that exchange to take place, the form would send data to a web server and do something with it. That's a little complicated, but building the forms with HTML/CSS is not. </strong></p><br><br>
+		</center>
+		<div class="form-group">
+			<label for="emailFormExample">Email Address</label>
+			<input type="email" class="form-control" id="emailFormExample" placeholder="Put ur email here look">
+			<label for="passwordFormExample">Password</label>
+			<input type="password" class="form-control" id="passwordFormExample" placeholder="fancy password cmon be creative">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputFile">File input</label>
+			<input type="file" id="exampleInputFile">
+		</div><br><br>
+		<pre><code>
+&lt;label for="emailFormExample">Email Address&lt;/label&gt;
+&lt;input type="email" class="form-control" id="emailFormExample" placeholder="Put ur email here look"&gt;
+		</code>
+		</pre><br>
+		<p style="text-align: center;"><strong>All are availible out of the box in html, but bootstrap styles the text and size. JS allows the users inputs to be used. Will be block level by default.</strong></p><br>
+		<p style="text-align: center;">Other types include checkboxes, radio buttons, dollar amounts, text input boxes, selects</p>
+		<hr>
+
+		<!-- buttons -->
+
+		<h2 style="text-align: center;">BUTTONS!</h2><br>
+		<p style="text-align: center;">Buttons come in all shapes and sizes. Commonly used as links and inputs for forms. Inline by default. Bootstrap supports hover affects, shadows, and opacity. Buttons will appear pressed with the .active class.</p>
+		<br>
+		<center>
+		<a class="btn btn-default" href="#" role="button">More</a>
+		<button class="btn btn-danger">Do not press</button>
+		<input class="btn btn-xs" type="submit" value="submit">
+		</center><br><br>
+		<pre><code>
+		&lt;button class="btn btn-danger"&gt;Do not press&lt;/button&gt;
+		</code>
+		</pre><br><hr>
+
+		<!-- inputs -->
+
+		<h3 style="text-align: center;">INPUTS!</h3><br>
+		<p style="text-align: center;">Inputs are an important way for the user to interact with the site, submitting and getting information in return. Inputs include text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color. The <code>type=""</code> specifies how the form will look.</p><br>
+		<input type="text" class="form-control" placeholder="Text input"><br>
+		<pre><code>
+	&lt;input type="text" class="form-control" placeholder="Text input"&gt;
+		</code></pre><br>
+		<h3 style="text-align: center;">Checks and Radios</h3>
+		<div class="checkbox">
+		<label>
+			<input type="checkbox" value="">
+				I have read and more than likely <em>don't</em> understand the terms and conditions.
+		</label>
+		<label>
+			<input type="radio" value="">
+			send me email updates 400,000 times a second.
+		</label><br><br>
+		<select class="form-control">
+		  <option>1999</option>
+		  <option>2000</option>
+		  <option>2001</option>
+		  <option>2002</option>
+		  <option>2003</option>
+		</select>
+	</body>
+</html>
